@@ -1,0 +1,71 @@
+@import url('../style.css');
+
+
+
+main{
+    position: relative;
+    margin-top: 30px;
+}
+.login {
+    background-color: var(--pr);
+    padding: 6em 3em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.login__title {
+    color: var(--dark-grey);
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.login__error--visible {
+    background-color: var(--white);
+    border: 1px solid var(--red);
+    width: 100%;
+    padding: .3em;
+    box-sizing: border-box;
+    text-align: center;
+    transition: .5s;
+}
+
+.login__input {
+    width: 100%;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.login__button {
+    padding: 1em 3em;
+}
+
+@media screen and (min-width: 768px) {
+    .login {
+        padding: 3em 0 4em;
+        width: 33%;
+        margin: 0 auto;
+    }  
+}
+
+@media screen and (min-width: 1024px) {
+    .login {
+        padding: 5em 0;
+        gap: 2em;
+    }
+    
+    .login__title, 
+    .login__button {
+        font-size: 18px;
+    }
+
+    .login__title {
+        margin-bottom: .5em;
+    }
+
+    .login__button {
+        width: 100%;
+    }
+}

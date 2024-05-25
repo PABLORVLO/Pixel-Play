@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="esr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <title>Pixel Play | Admin - Produtos</title>
+</head>
+
+<body>
+    <header class="header__container">
+        <a href="index.html" aria-label="link para a página inicial">
+            <img src="img/PIXEL.png" alt="Logo" class="header__logo">
+        </a>
+        <input type="search" class="header__searchbox" placeholder="que desea buscar?">
+        <!-- <button class="button--secondary header__login">Login</button> -->
+        <img src="img/search.png" alt="Botão de pesquisa" class="header__search-icon">
+    </header>
+    <main class="products__catalog">
+        <!-- Products are displayed using javascript -->
+    </main>
+
+    <footer class="footer__container">
+        <img src="img/PIXEL.png" alt="Logo da Alura Geek" class="footer__logo">
+        <ul class="footer__list">
+            <li class="footer__item">
+                <a href="#" class="footer__anchor">Quenes somos</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__anchor">trabajo de fidelidad</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__anchor">Programa de fidelidad</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__anchor">Sucursales</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__anchor">trabaja con nosotros</a>
+            </li>
+            <li class="footer__item">
+                <a href="#" class="footer__anchor">Anuncie aqui</a>
+            </li>
+        </ul>
+
+        <section class="contact">
+            <h2 class="contact__title">Contáctenos</h2>
+            <form class="contact__form">
+                <div class="input__wrapper">
+                    <label for="name" class="input__field--label">Nombre</label>
+                    <input type="text" id="name" class="input__field--content input__text" placeholder="Nombre" maxlength="40" required>
+                    <span class="input__validation-message"></span>
+                </div>
+                <div class="input__wrapper">
+                    <label for="message" class="input__field--label sr-only">Mensaje</label>
+                    <textarea name="message" id="message" class="input__textfield" placeholder="Escribe tu mensaje" maxlength="120" required></textarea>
+                    <span class="input__validation-message"></span>                
+                </div>
+                <p class="form__message"></p>
+                <button class="contact__button button--primary">Enviar mensaje</button>
+            </form>
+        </section>
+        
+
+    </footer>
+    <section class="developer">
+        <p>Desarrollado por</p>
+        <p><a href="https://github.com/PABLORVLO" class="developer__contact">Pablo Revelo</a></p>
+        <p>2024</p>
+    </section>
+
+    <script src="js/header.js"></script>
+    <script type="module" src="js/produtos.js"></script>
+    <script type="module" src="js/contato.js"></script>
+</body>
+
+</html>
